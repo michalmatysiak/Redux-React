@@ -6,12 +6,11 @@ export const REMOVE_COMMENT = "REMOVE_COMMENT";
 export const THUMB_UP_COMMENTS = "THUMB_UP_COMMENTS";
 export const THUMB_DOWN_COMMENTS = "THUMB_DOWN_COMMENTS";
 
-export function addComment(text) {
+export function addComment(text, id) {
     return {
         type: ADD_COMMENT,
         text,
-        id: uuid.v4(),
-        votes: 0
+        id: uuid.v4()
     };
 }
 

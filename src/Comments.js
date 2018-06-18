@@ -9,8 +9,8 @@ function comments(state = [], action) {
         case ADD_COMMENT:
             return [
                 {
-                    id: action.id,
                     text: action.text,
+                    id: action.id,
                     votes: 0
                 },
                 ...state
